@@ -1,0 +1,19 @@
+void main() {
+  salute (name: 'Victor', age: 23, sep:'-');
+}
+
+void salute({
+  required String name,
+  String? sep,
+  int? age
+ }) {
+     print('Suadação do ${name}');
+     if(sep != null) {
+       print(sep * 25);
+     }
+     if (age != null) {
+       print(age);
+     }
+     print(DateTime.now());
+}
+  
